@@ -1,0 +1,14 @@
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { Auth } from '../pages/Auth/Auth';
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<div>Hello, World!</div>} />
+      <Route path="/auth" element={<Auth />} />
+    </Routes>
+  );
+}
+
+export default App;
