@@ -1,0 +1,75 @@
+.title {
+    font-size: 48px;
+    color: var(--color-main);
+    margin: 60px auto;
+    width: fit-content;
+}
+
+.authForm {
+    margin: 0px auto;
+    width: 300px;
+    background-color: var(--color-main);
+    padding: 70px 70px 50px 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.authForm input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: var(--color-main);
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to right, transparent, #000000 50%, transparent);
+    border-image-slice: 1;
+}
+
+.authForm input:focus {
+    outline: none;
+    border-bottom: 2px solid #000000;
+}
+
+.authForm label {
+    font-size: 28px;
+    color: #333;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to right, transparent, #000000 70%, transparent);
+    border-image-slice: 1;
+}
+
+.authForm button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: var(--color-main);
+
+    background-image: url('../../../public/enter_button.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    min-width: 320px;
+    min-height: 150px;
+
+    flex-shrink: 0;
+}
+
+.authForm button:active {
+    transform: translateY(4px);  /* двигается вниз при нажатии */
+    color: #f8f7f7;  /* меняет цвет текста при нажатии */
+    transition: all 0.1s ease;   /* быстрый отклик */
+}
+
+.authForm button:active {
+    transform: translateY(2px);  /* или меньше */
+}

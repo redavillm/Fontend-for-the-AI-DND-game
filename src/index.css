@@ -12,7 +12,8 @@ code {
     monospace;
 } */
 :root {
-  --color-bg: #111111;
+  --color-main: #f1cc9b;
+  /* --color-bg: #111111;
   --color-surface: #1a1a1a;
   --color-surface-hover: #242424;
 
@@ -32,5 +33,15 @@ code {
   --space-2: 8px;
   --space-3: 12px;
   --space-4: 16px;
-  --space-5: 24px;
+  --space-5: 24px; */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('../public/background_main.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
